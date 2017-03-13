@@ -25,8 +25,10 @@ module SaltLint
       puts("\n----- SUMMARY(DIN): -----")
       Printer.print('warning', "Total errors found: #{errors}")
       if(errors>0)
+        puts("\nExiting with #{errors} errors.")
         exit 1
       else
+        puts("\n Exiting OK")
         exit 0
       end
     end
