@@ -22,11 +22,12 @@ module SaltLint
           errors = errors+1
         end
       end
-      puts("\n----- SUMMARY: -----")
+      puts("\n----- SUMMARY(DIN): -----")
       Printer.print('warning', "Total errors found: #{errors}")
       if(errors)
         exit 1
       end
+      exit 0
     end
 
 
