@@ -6,6 +6,6 @@
   - id: salt-lint
     name: Salt Lint
     description: Lint Salt files
-    entry: salt-lint
+    entry: salt-lint --no-check-line-length -f
     language: ruby
     files: \.(sls)$
